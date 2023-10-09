@@ -15,7 +15,7 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your comp
 1. Clone the repository to your local machine or download the source code.
 
    ```bash
-   git clone https://github.com/your-username/product-list-manager.git
+   git clone https://github.com/Toey-Dethsakda/my-auto-delete.git
 
 2. Navigate to the project directory.
     $ cd my-auto-delete
@@ -23,4 +23,4 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your comp
     $ npm install
 4. Start the development server.
     $ npm start
-This will launch the React application in your default web browser. 
+This will launch the React application in your default web browser.
