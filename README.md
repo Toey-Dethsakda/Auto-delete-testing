@@ -23,4 +23,4 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your comp
     $ npm install
 4. Start the development server.
     $ npm start
-This will launch the React application in your default web browser.
+This will launch the React application in your default web browser or click link https://auto-delete-todo.vercel.app/.
