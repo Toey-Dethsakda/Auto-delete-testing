@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 const initialProductList = [
@@ -100,7 +100,6 @@ const App = () => {
       <h1>Auto Delete TODO</h1>
       <div className="inputList">
         <input
-
           type="text"
           placeholder="Enter product name"
           value={inputProductName}
