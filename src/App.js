@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './App.css';
 
 const initialProductList = [
   {
@@ -96,33 +97,46 @@ const App = () => {
 
   return (
     <div>
-      <h1>Product List</h1>
-      <ul>
-        {productList.map((product) => (
-          <li key={product.name} onClick={() => handleProductClick(product.name)}>
-            {product.name} - {product.type}
-          </li>
-        ))}
-      </ul>
-      <h2>Fruits</h2>
-      <ul>
-        {fruits.map((fruit) => (
-          <li key={fruit.name}>{fruit.name}</li>
-        ))}
-      </ul>
-      <h2>Vegetables</h2>
-      <ul>
-        {vegetables.map((vegetable) => (
-          <li key={vegetable.name}>{vegetable.name}</li>
-        ))}
-      </ul>
-      <input
-        type="text"
-        placeholder="Enter product name"
-        value={inputProductName}
-        onChange={handleInputChange}
-      />
-      <button onClick={addToCategory}>Add to Category</button>
+      <h1>Auto Delete TODO</h1>
+      <div className="inputList">
+        <input
+
+          type="text"
+          placeholder="Enter product name"
+          value={inputProductName}
+          onChange={handleInputChange}
+        />
+        <button onClick={addToCategory}>ADD</button>
+      </div>
+
+      <div class="flex">
+        <div class="w-1/2">
+          <h2>Product List</h2>
+          <ul className="product-list">
+            {productList.map((product) => (
+              <li key={product.name} onClick={() => handleProductClick(product.name)}>
+                {product.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="w-1/2">
+          <h2>Fruits</h2>
+          <ul className="list-item">
+            {fruits.map((fruit) => (
+              <li key={fruit.name}>{fruit.name}</li>
+            ))}
+          </ul>
+        </div>
+        <div class="w-1/2">
+          <h2>Vegetables</h2>
+          <ul className="list-item">
+            {vegetables.map((vegetable) => (
+              <li key={vegetable.name}>{vegetable.name}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
